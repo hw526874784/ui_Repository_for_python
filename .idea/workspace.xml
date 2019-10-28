@@ -37,11 +37,14 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Test_case/test1_pwdlogin.py">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Resource/myresource.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" selection-start-line="7" selection-end-line="7" selection-end-column="21" />
+            <state relative-caret-position="228">
+              <caret line="254" column="13" lean-forward="true" selection-start-line="254" selection-start-column="13" selection-end-line="254" selection-end-column="13" />
+              <folding>
+                <element signature="e#46#74#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -67,7 +70,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/testcase.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="240">
@@ -380,7 +383,7 @@
       <workItem from="1571376674324" duration="11739000" />
       <workItem from="1571390005624" duration="36685000" />
       <workItem from="1571731160665" duration="49999000" />
-      <workItem from="1571975359961" duration="12837000" />
+      <workItem from="1571975359961" duration="12992000" />
     </task>
     <servers />
   </component>
@@ -396,7 +399,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="152246000" />
+    <option name="totallyTimeSpent" value="152401000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="969" extended-state="0" />
@@ -549,16 +552,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Resource/myresource.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="254" column="13" lean-forward="true" selection-start-line="254" selection-start-column="13" selection-end-line="254" selection-end-column="13" />
-          <folding>
-            <element signature="e#46#74#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Test_case/test1_pwdlogin.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -618,6 +611,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/testcase.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="17" column="24" lean-forward="true" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Test_case/test8_home_search.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -625,10 +625,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/testcase.py">
+    <entry file="file://$PROJECT_DIR$/Resource/myresource.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="17" column="24" lean-forward="true" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
+        <state relative-caret-position="228">
+          <caret line="254" column="13" lean-forward="true" selection-start-line="254" selection-start-column="13" selection-end-line="254" selection-end-column="13" />
+          <folding>
+            <element signature="e#46#74#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
