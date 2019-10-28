@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d46462b7-799d-4b5e-a6e7-d8762c89e27f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Resource/myresource.py" beforeDir="false" afterPath="$PROJECT_DIR$/Resource/myresource.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Test_case/test1_pwdlogin.py" beforeDir="false" afterPath="$PROJECT_DIR$/Test_case/test1_pwdlogin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test_case/test2_send_message.py" beforeDir="false" afterPath="$PROJECT_DIR$/Test_case/test2_send_message.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test_case/test3_send_photo.py" beforeDir="false" afterPath="$PROJECT_DIR$/Test_case/test3_send_photo.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test_case/test4_lock_start.py" beforeDir="false" afterPath="$PROJECT_DIR$/Test_case/test4_lock_start.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,8 +25,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Resource/myresource.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="33" column="14" lean-forward="true" selection-start-line="33" selection-start-column="14" selection-end-line="33" selection-end-column="14" />
+            <state relative-caret-position="330">
+              <caret line="22" column="49" lean-forward="true" selection-start-line="22" selection-start-column="49" selection-end-line="22" selection-end-column="49" />
               <folding>
                 <element signature="e#46#74#0" expanded="true" />
               </folding>
@@ -72,8 +67,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Test_case/test1_pwdlogin.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+            <state relative-caret-position="165">
+              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+              <folding>
+                <element signature="e#46#56#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -99,7 +97,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Resource/config.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
+            <state relative-caret-position="150">
               <caret line="10" column="76" selection-start-line="10" selection-start-column="76" selection-end-line="10" selection-end-column="76" />
               <folding>
                 <element signature="e#46#61#0" expanded="true" />
@@ -156,11 +154,11 @@
         <option value="$PROJECT_DIR$/Test_case/test8_home_search.py" />
         <option value="$PROJECT_DIR$/Resource/element.py" />
         <option value="$PROJECT_DIR$/Test_case/test9_home_search.py" />
-        <option value="$PROJECT_DIR$/Test_case/test1_pwdlogin.py" />
-        <option value="$PROJECT_DIR$/Test_case/test2_send_message.py" />
         <option value="$PROJECT_DIR$/Test_case/test3_send_photo.py" />
         <option value="$PROJECT_DIR$/Test_case/test4_lock_start.py" />
+        <option value="$PROJECT_DIR$/Test_case/test2_send_message.py" />
         <option value="$PROJECT_DIR$/Resource/myresource.py" />
+        <option value="$PROJECT_DIR$/Test_case/test1_pwdlogin.py" />
       </list>
     </option>
   </component>
@@ -371,7 +369,7 @@
       <workItem from="1571376674324" duration="11739000" />
       <workItem from="1571390005624" duration="36685000" />
       <workItem from="1571731160665" duration="49999000" />
-      <workItem from="1571975359961" duration="7392000" />
+      <workItem from="1571975359961" duration="8295000" />
     </task>
     <servers />
   </component>
@@ -387,7 +385,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="146801000" />
+    <option name="totallyTimeSpent" value="147704000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="969" extended-state="0" />
@@ -529,16 +527,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Resource/config.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="10" column="76" selection-start-line="10" selection-start-column="76" selection-end-line="10" selection-end-column="76" />
-          <folding>
-            <element signature="e#46#61#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Test_case/test9_home_search.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
@@ -591,13 +579,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Test_case/test1_pwdlogin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Test_case/test2_send_message.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -605,10 +586,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Resource/config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="76" selection-start-line="10" selection-start-column="76" selection-end-line="10" selection-end-column="76" />
+          <folding>
+            <element signature="e#46#61#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test_case/test1_pwdlogin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <element signature="e#46#56#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Resource/myresource.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="33" column="14" lean-forward="true" selection-start-line="33" selection-start-column="14" selection-end-line="33" selection-end-column="14" />
+        <state relative-caret-position="330">
+          <caret line="22" column="49" lean-forward="true" selection-start-line="22" selection-start-column="49" selection-end-line="22" selection-end-column="49" />
           <folding>
             <element signature="e#46#74#0" expanded="true" />
           </folding>

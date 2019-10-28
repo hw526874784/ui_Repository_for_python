@@ -10,13 +10,13 @@ driver=webdriver.Remote('http://0.0.0.0:4444/wd/hub',config.desired_caps)
 def wait():
     driver.implicitly_wait(15)
 
-def pwdlogin(phone,password):
+def pwdlogin():
     wait()
     driver.find_element_by_id(element.account_pwd_login).click()
     wait()
-    driver.find_element_by_id(element.et_UserName).send_keys(phone)
+    driver.find_element_by_id(element.et_UserName).send_keys("13011111111")
     wait()
-    driver.find_element_by_id(element.et_Password).send_keys(password)
+    driver.find_element_by_id(element.et_Password).send_keys("111111")
     wait()
     driver.find_element_by_id(element.loginBtn).click()
     wait()
@@ -24,7 +24,7 @@ def pwdlogin(phone,password):
         print('登录成功')
     else:
         print("登录失败")
-
+'''
 def send_message():
     wait()
     if driver.find_elements_by_id(element.ll_contacts):
@@ -286,7 +286,7 @@ def home_search():
         if "大风车" in driver.page_source:
             print("首页搜索成功")
         else:
-            print("首页搜索失败")
+            print("首页搜索失败")'''
 
 
 
