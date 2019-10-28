@@ -43,7 +43,7 @@ def send_message():
         else:
             print('消息发送失败')
     else:
-        pwdlogin(config.phone, config.pwd)
+        pwdlogin()
         wait()
         driver.find_element_by_id(element.ll_contacts).click()
         wait()
