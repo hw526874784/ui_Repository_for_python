@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d46462b7-799d-4b5e-a6e7-d8762c89e27f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Resource/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/Resource/config.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Resource/myresource.py" beforeDir="false" afterPath="$PROJECT_DIR$/Resource/myresource.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -52,8 +51,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Resource/myresource.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="551">
-              <caret line="41" column="69" lean-forward="true" selection-start-line="41" selection-start-column="69" selection-end-line="41" selection-end-column="69" />
+            <state relative-caret-position="299">
+              <caret line="23" column="58" lean-forward="true" selection-start-line="23" selection-start-column="58" selection-end-line="23" selection-end-column="58" />
               <folding>
                 <element signature="e#46#74#0" expanded="true" />
               </folding>
@@ -155,8 +154,8 @@
         <option value="$PROJECT_DIR$/Test_case/test1_pwdlogin.py" />
         <option value="$PROJECT_DIR$/run_all_case.py" />
         <option value="$PROJECT_DIR$/testcase.py" />
-        <option value="$PROJECT_DIR$/Resource/myresource.py" />
         <option value="$PROJECT_DIR$/Resource/config.py" />
+        <option value="$PROJECT_DIR$/Resource/myresource.py" />
       </list>
     </option>
   </component>
@@ -389,7 +388,7 @@
       <workItem from="1571376674324" duration="11739000" />
       <workItem from="1571390005624" duration="36685000" />
       <workItem from="1571731160665" duration="49999000" />
-      <workItem from="1571975359961" duration="16316000" />
+      <workItem from="1571975359961" duration="16643000" />
     </task>
     <servers />
   </component>
@@ -405,7 +404,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="155725000" />
+    <option name="totallyTimeSpent" value="156052000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="969" extended-state="0" />
@@ -633,8 +632,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Resource/myresource.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="551">
-          <caret line="41" column="69" lean-forward="true" selection-start-line="41" selection-start-column="69" selection-end-line="41" selection-end-column="69" />
+        <state relative-caret-position="299">
+          <caret line="23" column="58" lean-forward="true" selection-start-line="23" selection-start-column="58" selection-end-line="23" selection-end-column="58" />
           <folding>
             <element signature="e#46#74#0" expanded="true" />
           </folding>

@@ -19,9 +19,9 @@ class TestStringMethods(unittest.TestCase):
         self.wait()
         self.driver.find_element_by_id(element.et_Password).send_keys(config.pwd)
         self.wait()
-        self.driver.find_element_by_id(element.loginBtn).click()
+        self.driver.find_element_by_id(element.muxin).click()
         self.wait()
-        if self.driver.find_elements_by_id(element.message_map):
+        if self.driver.find_elements_by_id(element.muxin):
             print('登录成功')
         else:
             print("登录失败")
