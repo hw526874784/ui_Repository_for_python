@@ -24,7 +24,7 @@ def pwdlogin():
         print('登录成功')
     else:
         print("登录失败")
-'''
+
 def send_message():
     wait()
     if driver.find_elements_by_id(element.ll_contacts):
@@ -286,7 +286,7 @@ def home_search():
         if "大风车" in driver.page_source:
             print("首页搜索成功")
         else:
-            print("首页搜索失败")'''
+            print("首页搜索失败")
 
 
 
