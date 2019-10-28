@@ -12,4 +12,4 @@ desired_caps['appActivity'] = '.ui.activity.GuideActivity'  # APP入口的activi
 
 phone = "13011111111"
 pwd = "111111"
-message = 111
+message = "哈哈"
