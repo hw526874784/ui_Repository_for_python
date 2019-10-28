@@ -10,6 +10,6 @@ desired_caps['deviceName'] = 'QKKRNZNN99999999'  # 设备名称
 desired_caps['appPackage'] = 'com.immuxin.muxin'  # APP包名
 desired_caps['appActivity'] = '.ui.activity.GuideActivity'  # APP入口的activity
 
-phone = 13011111111
-pwd = 111111
+phone = "13011111111"
+pwd = "111111"
 message = 111

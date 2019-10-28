@@ -1,7 +1,6 @@
 # coding:utf-8
 import unittest
 import os
-from Resource import config
 # 用例路径
 case_path = os.path.join(os.getcwd(), "Test_case")
 # 报告存放路径
