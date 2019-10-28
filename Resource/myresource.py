@@ -74,7 +74,7 @@ def send_photo():
         else:
             print("照片发送失败")
     else:
-        pwdlogin(config.phone,config.pwd)
+        pwdlogin()
         wait()
         driver.find_element_by_id(element.ll_contacts).click()
         wait()
@@ -114,7 +114,7 @@ def lock_start():
         else:
             print("上锁失败")
     else:
-        pwdlogin(config.phone, config.pwd)
+        pwdlogin()
         wait()
         driver.find_element_by_id(element.ll_contacts).click()
         wait()
@@ -159,7 +159,7 @@ def secretly():
         wait()
         driver.find_element_by_id(element.chat_head_secretly).click()
     else:
-        pwdlogin(config.phone, config.pwd)
+        pwdlogin()
         wait()
         driver.find_element_by_id(element.ll_contacts).click()
         wait()
@@ -197,7 +197,7 @@ def user_information():
         driver.find_element_by_xpath(element.back).click()
 
     else:
-        pwdlogin(config.phone,config.pwd)
+        pwdlogin()
         wait()
         driver.find_element_by_id(element.ll_contacts).click()
         wait()
@@ -234,7 +234,7 @@ def location_send():
         else:
             print("位置发送失败")
     else:
-        pwdlogin(config.phone, config.pwd)
+        pwdlogin()
         wait()
         driver.find_element_by_id(element.ll_contacts).click()
         wait()
@@ -275,7 +275,7 @@ def home_search():
         else:
             print("首页搜索失败")
     else:
-        pwdlogin(config.phone, config.pwd)
+        pwdlogin()
         wait()
         driver.find_element_by_id(element.custom_edit_query).click()
         wait()
