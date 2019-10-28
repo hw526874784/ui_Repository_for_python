@@ -19,16 +19,17 @@ class TestStringMethods(unittest.TestCase):
         self.wait()
         self.driver.find_element_by_id(element.et_Password).send_keys(config.pwd)
         self.wait()
-        self.driver.find_element_by_id(element.muxin).click()
+        self.driver.find_element_by_id(element.loginBtn).click()
         self.wait()
         if self.driver.find_elements_by_id(element.muxin):
             print('登录成功')
         else:
             print("登录失败")
 
+
     def test2_send_message(self):
         self.wait()
-        if self.driver.find_elements_by_id(element.ll_contacts):
+        if self.driver.find_elements_by_id(element.message_map):
             self.driver.find_element_by_id(element.ll_contacts).click()
             self.wait()
             self.driver.find_element_by_xpath(element.contacts).click()
@@ -44,6 +45,7 @@ class TestStringMethods(unittest.TestCase):
             else:
                 print('消息发送失败')
         else:
+            webdriver.Remote('http://0.0.0.0:4444/wd/hub',config.desired_caps)
             self.test1_pwdlogin()
             self.wait()
             self.driver.find_element_by_id(element.ll_contacts).click()
