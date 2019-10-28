@@ -3,63 +3,74 @@
 from appium import webdriver
 from Resource import element
 from Resource import config
+import unittest
 
+class TestStringMethods(unittest.TestCase):
+    driver=webdriver.Remote('http://0.0.0.0:4444/wd/hub',config.desired_caps)
 
-driver=webdriver.Remote('http://0.0.0.0:4444/wd/hub',config.desired_caps)
+    def wait(self):
+        self.driver.implicitly_wait(15)
 
-def wait():
-    driver.implicitly_wait(15)
-
-def pwdlogin():
-    wait()
-    driver.find_element_by_id(element.account_pwd_login).click()
-    wait()
-    driver.find_element_by_id(element.et_UserName).send_keys(config.phone)
-    wait()
-    driver.find_element_by_id(element.et_Password).send_keys(config.pwd)
-    wait()
-    driver.find_element_by_id(element.loginBtn).click()
-    wait()
-    if driver.find_elements_by_id(element.muxin):
-        print('登录成功')
-    else:
-        print("登录失败")
-
-def send_message():
-    wait()
-    if driver.find_elements_by_id(element.ll_contacts):
-        driver.find_element_by_id(element.ll_contacts).click()
-        wait()
-        driver.find_element_by_xpath(element.contacts).click()
-        wait()
-        driver.find_element_by_id(element.layoutSendMsg).click()
-        wait()
-        driver.find_element_by_id(element.etInput).send_keys(config.message)
-        wait()
-        driver.find_element_by_id(element.ivSendMsg).click()
-        wait()
-        if driver.find_elements_by_id(element.right_is_read):
-            print('消息发送成功')
+    def test1_pwdlogin(self):
+        self.wait()
+        self.driver.find_element_by_id(element.account_pwd_login).click()
+        self.wait()
+        self.driver.find_element_by_id(element.et_UserName).send_keys(config.phone)
+        self.wait()
+        self.driver.find_element_by_id(element.et_Password).send_keys(config.pwd)
+        self.wait()
+        self.driver.find_element_by_id(element.loginBtn).click()
+        self.wait()
+        if self.driver.find_elements_by_id(element.message_map):
+            print('登录成功')
         else:
-            print('消息发送失败')
-    else:
-        pwdlogin()
-        wait()
-        driver.find_element_by_id(element.ll_contacts).click()
-        wait()
-        driver.find_element_by_xpath(element.contacts).click()
-        wait()
-        driver.find_element_by_id(element.layoutSendMsg).click()
-        wait()
-        driver.find_element_by_id(element.etInput).send_keys(config.message)
-        wait()
-        driver.find_element_by_id(element.ivSendMsg).click()
-        wait()
-        if driver.find_elements_by_id(element.right_is_read):
-            print('消息发送成功')
-        else:
-            print('消息发送失败')
+            print("登录失败")
 
+    def test2_send_message(self):
+        self.wait()
+        if self.driver.find_elements_by_id(element.ll_contacts):
+            self.driver.find_element_by_id(element.ll_contacts).click()
+            self.wait()
+            self.driver.find_element_by_xpath(element.contacts).click()
+            self.wait()
+            self.driver.find_element_by_id(element.layoutSendMsg).click()
+            self.wait()
+            self.driver.find_element_by_id(element.etInput).send_keys(config.message)
+            self.wait()
+            self.driver.find_element_by_id(element.ivSendMsg).click()
+            self.wait()
+            if self.driver.find_elements_by_id(element.right_is_read):
+                print('消息发送成功')
+            else:
+                print('消息发送失败')
+        else:
+            self.test1_pwdlogin()
+            self.wait()
+            self.driver.find_element_by_id(element.ll_contacts).click()
+            self.wait()
+            self.driver.find_element_by_xpath(element.contacts).click()
+            self.wait()
+            self.driver.find_element_by_id(element.layoutSendMsg).click()
+            self.wait()
+            self.driver.find_element_by_id(element.etInput).send_keys(config.message)
+            self.wait()
+            self.driver.find_element_by_id(element.ivSendMsg).click()
+            self.wait()
+            if self.driver.find_elements_by_id(element.right_is_read):
+                print('消息发送成功')
+            else:
+                print('消息发送失败')
+
+def suite():
+    suiteTest = unittest.TestSuite()
+    suiteTest.addTest(TestStringMethods("test1_pwdlogin"))
+    suiteTest.addTest(TestStringMethods("test2_send_message"))
+    return suiteTest
+
+if __name__ == '__main__':
+    unittest.main(defaultTest='suite')
+
+'''
 def send_photo():
     wait()
     if driver.find_elements_by_id(element.ivPhoto):
@@ -287,7 +298,7 @@ def home_search():
             print("首页搜索成功")
         else:
             print("首页搜索失败")
-
+'''
 
 
 
