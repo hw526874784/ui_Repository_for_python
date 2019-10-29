@@ -296,7 +296,7 @@ class Test_case(unittest.TestCase):
             self.wait()
             self.driver.find_element_by_id(element.search_activity_search_right_text).click()
             self.wait()
-            if "大风车" in self.driver.page_source:
+            if "tt" in self.driver.page_source:
                 print("首页搜索成功")
             else:
                 print("首页搜索失败")
