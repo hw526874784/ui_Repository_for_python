@@ -305,13 +305,13 @@ class Test_case(unittest.TestCase):
 def suite():
     suiteTest = unittest.TestSuite()
     suiteTest.addTest(Test_case("test1_pwdlogin"))
-    suiteTest.addTest(Test_case("test2_send_message"))
+    '''suiteTest.addTest(Test_case("test2_send_message"))
     suiteTest.addTest(Test_case("test3_send_photo"))
     suiteTest.addTest(Test_case("test4_lock_start"))
     suiteTest.addTest(Test_case("test5_secretly"))
     suiteTest.addTest(Test_case("test6_user_information"))
     suiteTest.addTest(Test_case("test7_location_send"))
-    suiteTest.addTest(Test_case("test8_home_search"))
+    suiteTest.addTest(Test_case("test8_home_search"))'''
     return suiteTest
 
 if __name__ == '__main__':
