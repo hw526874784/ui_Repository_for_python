@@ -4,6 +4,9 @@ from appium import webdriver
 from Resource import element
 from Resource import config
 import unittest
+import time
+
+
 
 class Test_case(unittest.TestCase):
     def startapp(self):
@@ -282,10 +285,13 @@ class Test_case(unittest.TestCase):
             self.wait()
             self.driver.find_element_by_id(element.search_activity_search_right_text).click()
             self.wait()
-            if "tt" in self.driver.page_source:
+            if "tt123456" in self.driver.page_source:
                 print("首页搜索成功")
             else:
                 print("首页搜索失败")
+            self.driver.keyevent(4)
+            self.driver.keyevent(4)
+
         else:
             self.startapp()
             self.test1_pwdlogin()
@@ -296,10 +302,45 @@ class Test_case(unittest.TestCase):
             self.wait()
             self.driver.find_element_by_id(element.search_activity_search_right_text).click()
             self.wait()
-            if "tt" in self.driver.page_source:
+            if "tt123456" in self.driver.page_source:
                 print("首页搜索成功")
             else:
                 print("首页搜索失败")
+            self.driver.keyevent(4)
+            self.driver.keyevent(4)
+
+
+
+    def test9_friends_search(self):
+        self.wait()
+        if  self.driver.find_elements_by_id(element.ll_contacts):
+            self.driver.find_element_by_id(element.ll_contacts).click()
+            self.wait()
+            self.driver.find_element_by_id(element.custom_edit_query).click()
+            self.wait()
+            self.driver.find_element_by_id(element.custom_edit_query).send_keys("tt")
+            self.driver.keyevent(66)
+            self.wait()
+            if "tt123456" in self.driver.page_source:
+                print("首页搜索成功")
+            else:
+                print("首页搜索失败")
+        else:
+            self.startapp()
+            self.test1_pwdlogin()
+            self.wait()
+            self.driver.find_element_by_id(element.ll_contacts).click()
+            self.wait()
+            self.driver.find_element_by_id(element.custom_edit_query).click()
+            self.wait()
+            self.driver.find_element_by_id(element.custom_edit_query).send_keys("tt")
+            self.driver.keyevent(66)
+            self.wait()
+            if "tt123456" in self.driver.page_source:
+                print("首页搜索成功")
+            else:
+                print("首页搜索失败")
+
 
 
 def suite():
@@ -312,6 +353,7 @@ def suite():
     suiteTest.addTest(Test_case("test6_user_information"))
     suiteTest.addTest(Test_case("test7_location_send"))
     suiteTest.addTest(Test_case("test8_home_search"))
+    suiteTest.addTest(Test_case("test9_friends_search"))
     return suiteTest
 
 if __name__ == '__main__':

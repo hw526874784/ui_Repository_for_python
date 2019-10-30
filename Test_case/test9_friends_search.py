@@ -9,5 +9,4 @@ from Resource import element
 import sys
 sys.path.append('/Users/hewei/test1/ui/Resource')
 from Resource import myresource
-from Resource import config
-myresource.test8_home_search()
+myresource.test9_friends_search()
