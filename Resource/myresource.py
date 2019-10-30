@@ -106,9 +106,8 @@ class Test_case(unittest.TestCase):
     def test4_lock_start(self):
         self.wait()
         if self.driver.find_elements_by_id(element.chat_head_lock):
-            self.driver.find_element_by_id(element.chat_head_back).click()
-            self.wait()
-            self.driver.find_element_by_id(element.iv_back).click()
+            self.driver.keyevent(4)
+            self.driver.keyevent(4)
             self.wait()
             self.driver.find_element_by_xpath(element.contacts2).click()
             self.wait()
@@ -135,8 +134,7 @@ class Test_case(unittest.TestCase):
             self.driver.find_element_by_id(element.layoutSendMsg).click()
             self.wait()
             self.driver.find_element_by_id(element.chat_head_lock).click()
-            self.wait()
-            self.driver.find_element_by_id(element.chat_head_back).click()
+            self.driver.keyevent(4)
             self.wait()
             self.driver.find_element_by_id(element.layoutSendMsg).click()
             self.wait()
@@ -145,8 +143,7 @@ class Test_case(unittest.TestCase):
             else:
                 print("上锁失败")
         self.driver.tap([(100,100)])
-        self.wait()
-        self.driver.find_element_by_id(element.iv_back).click()
+        self.driver.keyevent(4)
 
 
     def test5_secretly(self):
@@ -204,10 +201,8 @@ class Test_case(unittest.TestCase):
                 print("用户信息查询成功")
             else:
                 print("用户信息查询失败")
-            self.wait()
-            self.driver.find_element_by_id(element.iv_back).click()
-            self.wait()
-            self.driver.find_element_by_xpath(element.back).click()
+            self.driver.keyevent(4)
+            self.driver.keyevent(4)
 
         else:
             self.startapp()
@@ -228,9 +223,8 @@ class Test_case(unittest.TestCase):
             else:
                 print("用户信息查询失败")
             self.wait()
-            self.driver.find_element_by_id(element.iv_back).click()
-            self.wait()
-            self.driver.find_element_by_xpath(element.back).click()
+            self.driver.keyevent(4)
+            self.driver.keyevent(4)
 
     def test7_location_send(self):
         self.wait()
@@ -273,9 +267,8 @@ class Test_case(unittest.TestCase):
     def test8_home_search(self):
         self.wait()
         if  self.driver.find_elements_by_id(element.chat_head_back):
-            self.driver.find_element_by_id(element.chat_head_back).click()
-            self.wait()
-            self.driver.find_element_by_id(element.iv_back).click()
+            self.driver.keyevent(4)
+            self.driver.keyevent(4)
             self.wait()
             self.driver.find_element_by_id(element.muxin).click()
             self.wait()
@@ -322,9 +315,9 @@ class Test_case(unittest.TestCase):
             self.driver.keyevent(66)
             self.wait()
             if "tt123456" in self.driver.page_source:
-                print("首页搜索成功")
+                print("好友搜索成功")
             else:
-                print("首页搜索失败")
+                print("好友搜索失败")
         else:
             self.startapp()
             self.test1_pwdlogin()
@@ -337,9 +330,111 @@ class Test_case(unittest.TestCase):
             self.driver.keyevent(66)
             self.wait()
             if "tt123456" in self.driver.page_source:
-                print("首页搜索成功")
+                print("好友搜索成功")
             else:
-                print("首页搜索失败")
+                print("好友搜索失败")
+
+
+    def test10_add_friends(self):
+        self.wait()
+        if  self.driver.find_elements_by_id(element.header_add_contasts):
+            self.driver.find_element_by_id(element.header_add_contasts).click()
+            self.wait()
+            self.driver.find_element_by_id(element.custom_edit_query).click()
+            self.wait()
+            self.driver.find_element_by_id(element.custom_edit_query).send_keys("15675456460")
+            self.wait()
+            self.driver.find_element_by_xpath(element.find_friends).click()
+            self.wait()
+            if "1143527" in self.driver.page_source:
+                print("添加好友成功")
+            else:
+                print("添加好友失败")
+        else:
+            self.startapp()
+            self.test1_pwdlogin()
+            self.wait()
+            self.driver.find_element_by_id(element.ll_contacts).click()
+            self.wait()
+            self.driver.find_element_by_id(element.header_add_contasts).click()
+            self.wait()
+            self.driver.find_element_by_id(element.custom_edit_query).click()
+            self.wait()
+            self.driver.find_element_by_id(element.custom_edit_query).send_keys("15675456460")
+            self.wait()
+            self.driver.find_element_by_xpath(element.find_friends).click()
+            self.wait()
+            if "1143527" in self.driver.page_source:
+                print("添加好友成功")
+            else:
+                print("添加好友失败")
+
+
+    def test11_friends_nearby(self):
+        self.wait()
+        if  "1143527" in self.driver.page_source:
+            self.driver.keyevent(4)
+            self.driver.keyevent(4)
+            self.driver.keyevent(4)
+            self.wait()
+            self.driver.find_element_by_xpath(element.friends_nearby).click()
+            self.wait()
+            if "米以内" in self.driver.page_source:
+                print("添加附近的人成功")
+            else:
+                print("添加附近的人失败")
+        else:
+            self.startapp()
+            self.test1_pwdlogin()
+            self.wait()
+            self.driver.find_element_by_id(element.ll_contacts).click()
+            self.wait()
+            self.driver.find_element_by_id(element.header_add_contasts).click()
+            self.wait()
+            self.driver.find_element_by_xpath(element.friends_nearby).click()
+            self.wait()
+            if "米以内" in self.driver.page_source:
+                print("添加附近的人成功")
+            else:
+                print("添加附近的人失败")
+
+
+    def test12_group_search(self):
+        self.wait()
+        if  "米以内" in self.driver.page_source:
+            self.driver.keyevent(4)
+            self.driver.keyevent(4)
+            self.wait()
+            self.driver.find_element_by_id(element.fragment_contacts_mygroup).click()
+            self.wait()
+            self.driver.find_element_by_id(element.custom_edit_query).click()
+            self.driver.find_element_by_id(element.custom_edit_query).send_keys("123")
+            self.driver.keyevent(66)
+            self.wait()
+            if "fgggg" in self.driver.page_source:
+                print("群聊搜索失败")
+            else:
+                print("群聊搜索成功")
+        else:
+            self.startapp()
+            self.test1_pwdlogin()
+            self.wait()
+            self.driver.find_element_by_id(element.ll_contacts).click()
+            self.wait()
+            self.driver.find_element_by_id(element.fragment_contacts_mygroup).click()
+            self.wait()
+            self.driver.find_element_by_id(element.custom_edit_query).click()
+            self.driver.find_element_by_id(element.custom_edit_query).send_keys("123")
+            self.driver.keyevent(66)
+            self.wait()
+            if "fgggg" in self.driver.page_source:
+                print("群聊搜索失败")
+            else:
+                print("群聊搜索成功")
+
+
+
+
 
 
 
@@ -354,6 +449,9 @@ def suite():
     suiteTest.addTest(Test_case("test7_location_send"))
     suiteTest.addTest(Test_case("test8_home_search"))
     suiteTest.addTest(Test_case("test9_friends_search"))
+    suiteTest.addTest(Test_case("test10_add_friends"))
+    suiteTest.addTest(Test_case("test11_friends_nearby"))
+    suiteTest.addTest(Test_case("test12_group_search"))
     return suiteTest
 
 if __name__ == '__main__':
