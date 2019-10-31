@@ -441,9 +441,9 @@ class Test_case(unittest.TestCase):
         self.driver.find_element_by_id(element.loginBtn).click()
         self.wait()
         if "用户名密码错误或者账号未注册" in self.driver.page_source:
-            print('密码错误登录失败————faild')
+            print('密码错误登录失败————pass')
         else:
-            print("密码错误登录失败————pass")
+            print("密码错误登录失败————faild")
 
 
 
