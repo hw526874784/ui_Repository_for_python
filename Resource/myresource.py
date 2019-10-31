@@ -1,14 +1,13 @@
 #!/usr/bin/env python 
 # -*- coding:utf-8 -*-
 from appium import webdriver
-from Resource import element
+#from Resource import element
 from Resource import config
 import unittest
 import time
 
-
-
-class Test_case(unittest.TestCase):
+webdriver.Remote('http://0.0.0.0:4444/wd/hub', config.desired_caps)
+'''class Test_case(unittest.TestCase):
     def startapp(self):
         webdriver.Remote('http://0.0.0.0:4444/wd/hub', config.desired_caps)
 
@@ -469,6 +468,6 @@ def suite():
 
 if __name__ == '__main__':
     unittest.main(defaultTest='suite')
-
+'''
 
 
