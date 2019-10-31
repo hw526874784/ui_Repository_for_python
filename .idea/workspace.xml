@@ -24,8 +24,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Resource/myresource.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="22" column="83" lean-forward="true" selection-start-line="22" selection-start-column="83" selection-end-line="22" selection-end-column="83" />
+            <state relative-caret-position="338">
+              <caret line="23" column="66" selection-start-line="23" selection-start-column="66" selection-end-line="23" selection-end-column="66" />
               <folding>
                 <element signature="e#46#74#0" expanded="true" />
               </folding>
@@ -157,8 +157,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="83" />
-    <option name="y" value="40" />
+    <option name="x" value="31" />
+    <option name="y" value="181" />
     <option name="width" value="1920" />
     <option name="height" value="969" />
   </component>
@@ -388,7 +388,7 @@
       <workItem from="1571731160665" duration="49999000" />
       <workItem from="1571975359961" duration="31035000" />
       <workItem from="1572414343918" duration="5770000" />
-      <workItem from="1572424819231" duration="6301000" />
+      <workItem from="1572424819231" duration="7024000" />
     </task>
     <servers />
   </component>
@@ -404,18 +404,18 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="182515000" />
+    <option name="totallyTimeSpent" value="183238000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="969" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22310969" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22310969" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3295325" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.2941847" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2941847" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3990878" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -655,8 +655,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Resource/myresource.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="83" lean-forward="true" selection-start-line="22" selection-start-column="83" selection-end-line="22" selection-end-column="83" />
+        <state relative-caret-position="338">
+          <caret line="23" column="66" selection-start-line="23" selection-start-column="66" selection-end-line="23" selection-end-column="66" />
           <folding>
             <element signature="e#46#74#0" expanded="true" />
           </folding>
