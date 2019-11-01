@@ -1,13 +1,9 @@
 #!/usr/bin/env python
 # -*- coding:utf-8 -*-
-import sys
 from appium import webdriver
 from Resource import element
 from Resource import config
 import unittest
-import time
-import importlib
-importlib.reload(sys)
 
 class Test_case(unittest.TestCase):
     def startapp(self):
