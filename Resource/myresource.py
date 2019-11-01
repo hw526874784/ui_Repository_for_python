@@ -1,4 +1,5 @@
-
+#!/usr/bin/python
+# -- coding: utf-8 --
 from appium import webdriver
 from Resource import element
 from Resource import config
