@@ -1,10 +1,13 @@
 #!/usr/bin/env python
 # -*- coding:utf-8 -*-
+import sys
 from appium import webdriver
 from Resource import element
 from Resource import config
 import unittest
 import time
+import importlib
+importlib.reload(sys)
 
 class Test_case(unittest.TestCase):
     def startapp(self):
@@ -369,7 +372,6 @@ class Test_case(unittest.TestCase):
 
 
     def test11_friends_nearby(self):
-        self.encoding = "米以内"
         self.wait()
         if  "1143527" in self.driver.page_source:
             self.driver.keyevent(4)
@@ -378,7 +380,7 @@ class Test_case(unittest.TestCase):
             self.wait()
             self.driver.find_element_by_xpath(element.friends_nearby).click()
             self.wait()
-            if self.encoding in self.driver.page_source:
+            if "米以内" in self.driver.page_source:
                 print("添加附近的人成功————pass")
             else:
                 print("添加附近的人成功————faild")
@@ -392,7 +394,7 @@ class Test_case(unittest.TestCase):
             self.wait()
             self.driver.find_element_by_xpath(element.friends_nearby).click()
             self.wait()
-            if self.encoding in self.driver.page_source:
+            if "米以内" in self.driver.page_source:
                 print("添加附近的人成功————pass")
             else:
                 print("添加附近的人成功————faild")

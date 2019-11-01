@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d46462b7-799d-4b5e-a6e7-d8762c89e27f" name="Default Changelist" comment="" />
+    <list default="true" id="d46462b7-799d-4b5e-a6e7-d8762c89e27f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/Resource/myresource.py" beforeDir="false" afterPath="$PROJECT_DIR$/Resource/myresource.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,10 +24,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Resource/myresource.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6">
-              <caret line="364" column="52" lean-forward="true" selection-start-line="364" selection-start-column="52" selection-end-line="364" selection-end-column="52" />
+            <state relative-caret-position="-6472">
+              <caret line="8" column="16" lean-forward="true" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
               <folding>
-                <element signature="e#45#73#0" expanded="true" />
+                <element signature="e#45#55#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -386,7 +388,7 @@
       <workItem from="1571731160665" duration="49999000" />
       <workItem from="1571975359961" duration="31035000" />
       <workItem from="1572414343918" duration="5770000" />
-      <workItem from="1572424819231" duration="11771000" />
+      <workItem from="1572424819231" duration="13705000" />
     </task>
     <servers />
   </component>
@@ -402,7 +404,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="187985000" />
+    <option name="totallyTimeSpent" value="189919000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="969" extended-state="6" />
@@ -653,10 +655,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Resource/myresource.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6">
-          <caret line="364" column="52" lean-forward="true" selection-start-line="364" selection-start-column="52" selection-end-line="364" selection-end-column="52" />
+        <state relative-caret-position="-6472">
+          <caret line="8" column="16" lean-forward="true" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
           <folding>
-            <element signature="e#45#73#0" expanded="true" />
+            <element signature="e#45#55#0" expanded="true" />
           </folding>
         </state>
       </provider>
