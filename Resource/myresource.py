@@ -14,7 +14,7 @@ class Test_case(unittest.TestCase):
     def wait(self):
         self.driver.implicitly_wait(15)
 
-    def test1_pwdlogin(self):
+    def test_pwdlogin(self):
         self.wait()
         self.driver.find_element_by_id(element.account_pwd_login).click()
         self.wait()
@@ -30,9 +30,9 @@ class Test_case(unittest.TestCase):
             print("登录成功————faild")
 
 
-    def test2_send_message(self):
+    def test_send_message(self):
         self.wait()
-        if self.driver.find_element_by_id(element.ll_contacts):
+        if element.ll_contacts in self.driver.page_source:
             self.driver.find_element_by_id(element.ll_contacts).click()
             self.wait()
             self.driver.find_element_by_xpath(element.contacts).click()
@@ -49,7 +49,7 @@ class Test_case(unittest.TestCase):
                 print('消息发送成功————faild')
         else:
             self.startapp()
-            self.test1_pwdlogin()
+            self.test_pwdlogin()
             self.wait()
             self.driver.find_element_by_id(element.ll_contacts).click()
             self.wait()
@@ -67,9 +67,9 @@ class Test_case(unittest.TestCase):
                 print('消息发送成功————faild')
 
 
-    def test3_send_photo(self):
+    def test_send_photo(self):
         self.wait()
-        if self.driver.find_element_by_id(element.ivPhoto):
+        if element.ivPhoto in self.driver.page_source:
             self.driver.find_element_by_id(element.ivPhoto).click()
             self.wait()
             self.driver.find_element_by_xpath(element.photo).click()
@@ -82,7 +82,7 @@ class Test_case(unittest.TestCase):
                 print("照片发送成功————faild")
         else:
             self.startapp()
-            self.test1_pwdlogin()
+            self.test_pwdlogin()
             self.wait()
             self.driver.find_element_by_id(element.ll_contacts).click()
             self.wait()
@@ -100,9 +100,9 @@ class Test_case(unittest.TestCase):
             else:
                 print("照片发送成功————faild")
 
-    def test4_lock_start(self):
+    def test_lock_start(self):
         self.wait()
-        if self.driver.find_element_by_id(element.chat_head_lock):
+        if element.chat_head_lock in self.driver.page_source:
             self.driver.keyevent(4)
             self.driver.keyevent(4)
             self.wait()
@@ -122,7 +122,7 @@ class Test_case(unittest.TestCase):
                 print("上锁成功————faild")
         else:
             self.startapp()
-            self.test1_pwdlogin()
+            self.test_pwdlogin()
             self.wait()
             self.driver.find_element_by_id(element.ll_contacts).click()
             self.wait()
@@ -139,13 +139,27 @@ class Test_case(unittest.TestCase):
                 print("上锁成功————pass")
             else:
                 print("上锁成功————faild")
-        self.driver.tap([(100,100)])
+
+
+    def test_lock_pwderro(self):
+        self.wait()
+        self.driver.find_element_by_id(element.linear_pass)
+        self.driver.tap([(100,900)])
+        self.driver.tap([(100,900)])
+        self.driver.tap([(400,900)])
+        self.driver.tap([(400,900)])
+        self.wait()
+        if self.driver.find_element_by_id(element.linear_pass):
+            print("解锁失败,密码错误————pass")
+        else:
+            print("解锁失败,密码错误————faild")
+        self.driver.keyevent(4)
         self.driver.keyevent(4)
 
 
-    def test5_secretly(self):
+    def test_secretly(self):
         self.wait()
-        if self.driver.find_element_by_id(element.ll_contacts):
+        if element.ll_contacts in self.driver.page_source:
             self.driver.find_element_by_id(element.ll_contacts).click()
             self.wait()
             self.driver.find_element_by_xpath(element.contacts).click()
@@ -166,7 +180,7 @@ class Test_case(unittest.TestCase):
             self.driver.find_element_by_id(element.chat_head_secretly).click()
         else:
             self.startapp()
-            self.test1_pwdlogin()
+            self.test_pwdlogin()
             self.wait()
             self.driver.find_element_by_id(element.ll_contacts).click()
             self.wait()
@@ -187,9 +201,9 @@ class Test_case(unittest.TestCase):
             self.wait()
             self.driver.find_element_by_id(element.chat_head_secretly).click()
 
-    def test6_user_information(self):
+    def test_user_information(self):
         self.wait()
-        if self.driver.find_element_by_id(element.chat_head_cir):
+        if element.chat_head_cir in self.driver.page_source:
             self.driver.find_element_by_id(element.chat_head_cir).click()
             self.wait()
             self.driver.find_element_by_xpath(element.user_information).click()
@@ -202,7 +216,7 @@ class Test_case(unittest.TestCase):
             self.driver.keyevent(4)
         else:
             self.startapp()
-            self.test1_pwdlogin()
+            self.test_pwdlogin()
             self.wait()
             self.driver.find_element_by_id(element.ll_contacts).click()
             self.wait()
@@ -222,9 +236,9 @@ class Test_case(unittest.TestCase):
             self.driver.keyevent(4)
             self.driver.keyevent(4)
 
-    def test7_location_send(self):
+    def test_location_send(self):
         self.wait()
-        if self.driver.find_element_by_id(element.ivMoreMenuItem):
+        if element.ivMoreMenuItem in self.driver.page_source:
             self.driver.find_element_by_id(element.ivMoreMenuItem).click()
             self.wait()
             self.driver.find_element_by_xpath(element.location).click()
@@ -239,7 +253,7 @@ class Test_case(unittest.TestCase):
                 print("位置发送成功————faild")
         else:
             self.startapp()
-            self.test1_pwdlogin()
+            self.test_pwdlogin()
             self.wait()
             self.driver.find_element_by_id(element.ll_contacts).click()
             self.wait()
@@ -260,9 +274,90 @@ class Test_case(unittest.TestCase):
             else:
                 print("位置发送成功————faild")
 
-    def test8_home_search(self):
+
+    def test_red_bag_lack_money(self):
         self.wait()
-        if  self.driver.find_element_by_id(element.chat_head_back):
+        if element.message_map in self.driver.page_source:
+            self.driver.find_element_by_xpath(element.red_bag).click()
+            self.wait()
+            self.driver.find_element_by_id(element.red_packets_money).click()
+            self.wait()
+            self.driver.find_element_by_id(element.red_packets_money).send_keys("100")
+            self.wait()
+            self.driver.find_element_by_id(element.red_packets_button).click()
+            self.wait()
+            if element.linear_pass in self.driver.page_source:
+                print("红包发送失败,余额不足————faild")
+            else:
+                print("红包发送失败,余额不足————pass")
+        else:
+            self.startapp()
+            self.test_pwdlogin()
+            self.wait()
+            self.driver.find_element_by_id(element.ll_contacts).click()
+            self.wait()
+            self.driver.find_element_by_xpath(element.contacts).click()
+            self.wait()
+            self.driver.find_element_by_id(element.layoutSendMsg).click()
+            self.wait()
+            self.driver.find_element_by_id(element.ivMoreMenuItem).click()
+            self.wait()
+            self.driver.find_element_by_xpath(element.red_bag).click()
+            self.wait()
+            self.driver.find_element_by_id(element.red_packets_money).send_keys("100")
+            self.wait()
+            self.driver.find_element_by_id(element.red_packets_button).click()
+            self.wait()
+            if element.linear_pass in self.driver.page_source:
+                print("红包发送失败,余额不足————faild")
+            else:
+                print("红包发送失败,余额不足————pass")
+
+
+    def test_transfer_money_lack(self):
+        self.wait()
+        if element.red_packets_button in self.driver.page_source:
+            self.driver.keyevent(4)
+            self.driver.keyevent(4)
+            self.wait()
+            self.driver.find_element_by_xpath(element.transfer_money_xpath).click()
+            self.wait()
+            self.driver.find_element_by_id(element.transfer_money).send_keys("100")
+            self.wait()
+            self.driver.find_element_by_id(element.transfer_uniteButton).click()
+            self.wait()
+            if "余额不足" in self.driver.page_source:
+                print("转账失败,余额不足————pass")
+            else:
+                print("转账失败,余额不足————faild")
+        else:
+            self.startapp()
+            self.test_pwdlogin()
+            self.wait()
+            self.driver.find_element_by_id(element.ll_contacts).click()
+            self.wait()
+            self.driver.find_element_by_xpath(element.contacts).click()
+            self.wait()
+            self.driver.find_element_by_id(element.layoutSendMsg).click()
+            self.wait()
+            self.driver.find_element_by_id(element.ivMoreMenuItem).click()
+            self.wait()
+            self.driver.find_element_by_xpath(element.transfer_money_xpath).click()
+            self.wait()
+            self.driver.find_element_by_id(element.transfer_money).send_keys("100")
+            self.wait()
+            self.driver.find_element_by_id(element.transfer_uniteButton).click()
+            self.wait()
+            if "余额不足" in self.driver.page_source:
+                print("转账失败,余额不足————pass")
+            else:
+                print("转账,余额不足————faild")
+
+
+    def test_home_search(self):
+        self.wait()
+        if  element.transfer_uniteButton in self.driver.page_source:
+            self.driver.keyevent(4)
             self.driver.keyevent(4)
             self.driver.keyevent(4)
             self.wait()
@@ -283,7 +378,7 @@ class Test_case(unittest.TestCase):
 
         else:
             self.startapp()
-            self.test1_pwdlogin()
+            self.test_pwdlogin()
             self.wait()
             self.driver.find_element_by_id(element.custom_edit_query).click()
             self.wait()
@@ -300,9 +395,9 @@ class Test_case(unittest.TestCase):
 
 
 
-    def test9_friends_search(self):
+    def test_friends_search(self):
         self.wait()
-        if  self.driver.find_element_by_id(element.ll_contacts):
+        if  element.ll_contacts in self.driver.page_source:
             self.driver.find_element_by_id(element.ll_contacts).click()
             self.wait()
             self.driver.find_element_by_id(element.custom_edit_query).click()
@@ -316,7 +411,7 @@ class Test_case(unittest.TestCase):
                 print("好友搜索成功————faild")
         else:
             self.startapp()
-            self.test1_pwdlogin()
+            self.test_pwdlogin()
             self.wait()
             self.driver.find_element_by_id(element.ll_contacts).click()
             self.wait()
@@ -331,9 +426,9 @@ class Test_case(unittest.TestCase):
                 print("好友搜索成功————faild")
 
 
-    def test10_add_friends(self):
+    def test_add_friends(self):
         self.wait()
-        if  self.driver.find_element_by_id(element.header_add_contasts):
+        if  element.header_add_contasts in self.driver.page_source:
             self.driver.find_element_by_id(element.header_add_contasts).click()
             self.wait()
             self.driver.find_element_by_id(element.custom_edit_query).click()
@@ -348,7 +443,7 @@ class Test_case(unittest.TestCase):
                 print("添加好友成功————faild")
         else:
             self.startapp()
-            self.test1_pwdlogin()
+            self.test_pwdlogin()
             self.wait()
             self.driver.find_element_by_id(element.ll_contacts).click()
             self.wait()
@@ -366,7 +461,7 @@ class Test_case(unittest.TestCase):
                 print("添加好友成功————faild")
 
 
-    def test11_friends_nearby(self):
+    def test_friends_nearby(self):
         self.wait()
         if  "1143527" in self.driver.page_source:
             self.driver.keyevent(4)
@@ -381,7 +476,7 @@ class Test_case(unittest.TestCase):
                 print("添加附近的人成功————faild")
         else:
             self.startapp()
-            self.test1_pwdlogin()
+            self.test_pwdlogin()
             self.wait()
             self.driver.find_element_by_id(element.ll_contacts).click()
             self.wait()
@@ -395,7 +490,7 @@ class Test_case(unittest.TestCase):
                 print("添加附近的人成功————faild")
 
 
-    def test12_group_search(self):
+    def test_group_search(self):
         self.wait()
         if  "100" in self.driver.page_source:
             self.driver.keyevent(4)
@@ -413,7 +508,7 @@ class Test_case(unittest.TestCase):
                 print("群聊搜索成功————pass")
         else:
             self.startapp()
-            self.test1_pwdlogin()
+            self.test_pwdlogin()
             self.wait()
             self.driver.find_element_by_id(element.ll_contacts).click()
             self.wait()
@@ -428,7 +523,7 @@ class Test_case(unittest.TestCase):
             else:
                 print("群聊搜索成功————pass")
 
-    def test13_loginfaied(self):
+    def test_loginfaied(self):
         self.startapp()
         self.driver.find_element_by_id(element.account_pwd_login).click()
         self.wait()
@@ -446,21 +541,27 @@ class Test_case(unittest.TestCase):
 
 
 
+
+
 def suite():
     suiteTest = unittest.TestSuite()
-    suiteTest.addTest(Test_case("test1_pwdlogin"))
-    suiteTest.addTest(Test_case("test2_send_message"))
-    suiteTest.addTest(Test_case("test3_send_photo"))
-    suiteTest.addTest(Test_case("test4_lock_start"))
-    suiteTest.addTest(Test_case("test5_secretly"))
-    suiteTest.addTest(Test_case("test6_user_information"))
-    suiteTest.addTest(Test_case("test7_location_send"))
-    suiteTest.addTest(Test_case("test8_home_search"))
-    suiteTest.addTest(Test_case("test9_friends_search"))
-    suiteTest.addTest(Test_case("test10_add_friends"))
-    suiteTest.addTest(Test_case("test11_friends_nearby"))
-    suiteTest.addTest(Test_case("test12_group_search"))
-    suiteTest.addTest(Test_case("test13_loginfaied"))
+    suiteTest.addTest(Test_case("test_pwdlogin"))
+    suiteTest.addTest(Test_case("test_send_message"))
+    suiteTest.addTest(Test_case("test_send_photo"))
+    suiteTest.addTest(Test_case("test_lock_start"))
+    suiteTest.addTest(Test_case("test_lock_pwderro"))
+    suiteTest.addTest(Test_case("test_secretly"))
+    suiteTest.addTest(Test_case("test_user_information"))
+    suiteTest.addTest(Test_case("test_location_send"))
+    suiteTest.addTest(Test_case("test_red_bag_lack_money"))
+    suiteTest.addTest(Test_case("test_transfer_money_lack"))
+    suiteTest.addTest(Test_case("test_home_search"))
+    suiteTest.addTest(Test_case("test_friends_search"))
+    suiteTest.addTest(Test_case("test_add_friends"))
+    suiteTest.addTest(Test_case("test_friends_nearby"))
+    suiteTest.addTest(Test_case("test_group_search"))
+    suiteTest.addTest(Test_case("test_loginfaied"))
+
     return suiteTest
 
 if __name__ == '__main__':

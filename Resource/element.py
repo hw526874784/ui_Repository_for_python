@@ -44,6 +44,15 @@ header_add_contasts="com.immuxin.muxin:id/header_add_contasts"
 find_friends="/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.FrameLayout/android.widget.ScrollView/android.widget.LinearLayout/android.widget.LinearLayout[2]/android.widget.LinearLayout[1]"
 friends_nearby="/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.FrameLayout[2]/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.LinearLayout[3]"
 fragment_contacts_mygroup="com.immuxin.muxin:id/fragment_contacts_mygroup"
+red_bag="/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.RelativeLayout[3]/android.widget.LinearLayout/android.widget.GridView/android.widget.LinearLayout[5]/android.widget.ImageView"
+red_packets_money="com.immuxin.muxin:id/red_packets_money"
+red_packets_button="com.immuxin.muxin:id/red_packets_button"
+transfer_money_xpath="/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.RelativeLayout[3]/android.widget.LinearLayout/android.widget.GridView/android.widget.LinearLayout[6]/android.widget.ImageView"
+transfer_money="com.immuxin.muxin:id/transfer_money"
+transfer_uniteButton="com.immuxin.muxin:id/transfer_uniteButton"
+
+
+
 
 "个人中心"
 et_UserName="com.immuxin.muxin:id/et_UserName"
