@@ -315,6 +315,7 @@ class Test_case(unittest.TestCase):
 
 
     def test_transfer_money_lack(self):
+        a = "余额不足"
         self.wait()
         if element.red_packets_button in self.driver.page_source:
             self.driver.keyevent(4)
@@ -326,7 +327,7 @@ class Test_case(unittest.TestCase):
             self.wait()
             self.driver.find_element_by_id(element.transfer_uniteButton).click()
             self.wait()
-            if "余额不足" in self.driver.page_source:
+            if a in self.driver.page_source:
                 print("转账失败,余额不足————pass")
             else:
                 print("转账失败,余额不足————faild")
