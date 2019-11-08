@@ -326,7 +326,7 @@ class Test_case(unittest.TestCase):
             self.wait()
             self.driver.find_element_by_id(element.transfer_uniteButton).click()
             self.wait()
-            if "余额不足,请充值" in str(self.driver.page_source):
+            if "余额不足,请充值" in self.driver.page_source:
                 print("转账失败,余额不足————pass")
             else:
                 print("转账失败,余额不足————faild")
@@ -348,7 +348,7 @@ class Test_case(unittest.TestCase):
             self.wait()
             self.driver.find_element_by_id(element.transfer_uniteButton).click()
             self.wait()
-            if "余额不足,请充值" in str(self.driver.page_source):
+            if "余额不足,请充值" in self.driver.page_source:
                 print("转账失败,余额不足————pass")
             else:
                 print("转账失败,余额不足————faild")
