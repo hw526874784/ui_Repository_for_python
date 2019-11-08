@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d46462b7-799d-4b5e-a6e7-d8762c89e27f" name="Default Changelist" comment="" />
+    <list default="true" id="d46462b7-799d-4b5e-a6e7-d8762c89e27f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/Resource/myresource.py" beforeDir="false" afterPath="$PROJECT_DIR$/Resource/myresource.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,8 +24,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Resource/myresource.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
-              <caret line="336" column="71" lean-forward="true" selection-start-line="336" selection-start-column="71" selection-end-line="336" selection-end-column="71" />
+            <state relative-caret-position="535">
+              <caret line="334" column="32" lean-forward="true" selection-start-line="334" selection-start-column="32" selection-end-line="334" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -312,7 +314,7 @@
       <workItem from="1573027814848" duration="92000" />
       <workItem from="1573027929010" duration="989000" />
       <workItem from="1573028983427" duration="14736000" />
-      <workItem from="1573182842465" duration="5988000" />
+      <workItem from="1573182842465" duration="6332000" />
     </task>
     <servers />
   </component>
@@ -331,10 +333,11 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="255064000" />
+    <option name="totallyTimeSpent" value="255408000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="969" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23588924" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -507,8 +510,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Resource/myresource.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="336" column="71" lean-forward="true" selection-start-line="336" selection-start-column="71" selection-end-line="336" selection-end-column="71" />
+        <state relative-caret-position="535">
+          <caret line="334" column="32" lean-forward="true" selection-start-line="334" selection-start-column="32" selection-end-line="334" selection-end-column="32" />
         </state>
       </provider>
     </entry>
