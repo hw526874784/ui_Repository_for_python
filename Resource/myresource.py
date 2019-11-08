@@ -326,7 +326,7 @@ class Test_case(unittest.TestCase):
             self.wait()
             self.driver.find_element_by_id(element.transfer_uniteButton).click()
             self.wait()
-            if "余额不足" in self.driver.page_source.decode("utf-8","ignore"):
+            if "余额不足" in self.driver.page_source.encode("ascii","ignore").decode("utf-8"):
                 print("转账失败,余额不足————pass")
             else:
                 print("转账失败,余额不足————faild")
@@ -348,10 +348,10 @@ class Test_case(unittest.TestCase):
             self.wait()
             self.driver.find_element_by_id(element.transfer_uniteButton).click()
             self.wait()
-            if "余额不足" in self.driver.page_source.decode("utf-8","ignore"):
+            if "余额不足,请充值" in self.driver.page_source.encode("ascii","ignore").decode("utf-8"):
                 print("转账失败,余额不足————pass")
             else:
-                print("转账,余额不足————faild")
+                print("转账失败,余额不足————faild")
 
 
     def test_home_search(self):
