@@ -348,7 +348,7 @@ class Test_case(unittest.TestCase):
             self.wait()
             self.driver.find_element_by_id(element.transfer_uniteButton).click()
             self.wait()
-            if "余额不足" in self.driver.page_source:
+            if "余额不足" in self.driver.page_source.decode("utf-8","ignore"):
                 print("转账失败,余额不足————pass")
             else:
                 print("转账,余额不足————faild")
@@ -545,7 +545,7 @@ class Test_case(unittest.TestCase):
 
 def suite():
     suiteTest = unittest.TestSuite()
-    suiteTest.addTest(Test_case("test_pwdlogin"))
+    '''suiteTest.addTest(Test_case("test_pwdlogin"))
     suiteTest.addTest(Test_case("test_send_message"))
     suiteTest.addTest(Test_case("test_send_photo"))
     suiteTest.addTest(Test_case("test_lock_start"))
@@ -553,14 +553,14 @@ def suite():
     suiteTest.addTest(Test_case("test_secretly"))
     suiteTest.addTest(Test_case("test_user_information"))
     suiteTest.addTest(Test_case("test_location_send"))
-    suiteTest.addTest(Test_case("test_red_bag_lack_money"))
+    suiteTest.addTest(Test_case("test_red_bag_lack_money"))'''
     suiteTest.addTest(Test_case("test_transfer_money_lack"))
-    suiteTest.addTest(Test_case("test_home_search"))
+    '''suiteTest.addTest(Test_case("test_home_search"))
     suiteTest.addTest(Test_case("test_friends_search"))
     suiteTest.addTest(Test_case("test_add_friends"))
     suiteTest.addTest(Test_case("test_friends_nearby"))
     suiteTest.addTest(Test_case("test_group_search"))
-    suiteTest.addTest(Test_case("test_loginfaied"))
+    suiteTest.addTest(Test_case("test_loginfaied"))'''
 
     return suiteTest
 
