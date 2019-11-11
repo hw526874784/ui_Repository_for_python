@@ -206,7 +206,7 @@ class Test_case(unittest.TestCase):
             self.wait()
             self.driver.find_element_by_xpath(element.user_information).click()
             self.wait()
-            if u"模信号:1251586" in self.driver.page_source:
+            if u"拇信号:1251586" in self.driver.page_source:
                 print("用户信息查询成功————pass")
             else:
                 print("用户信息查询成功————faild")
@@ -226,7 +226,7 @@ class Test_case(unittest.TestCase):
             self.wait()
             self.driver.find_element_by_xpath(element.user_information).click()
             self.wait()
-            if u"模信号:1251586" in self.driver.page_source:
+            if u"拇信号:1251586" in self.driver.page_source:
                 print("用户信息查询成功————pass")
             else:
                 print("用户信息查询成功————faild")
