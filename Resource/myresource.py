@@ -497,7 +497,7 @@ class Test_case(unittest.TestCase):
             self.driver.find_element_by_id(element.fragment_contacts_mygroup).click()
             self.wait()
             self.driver.find_element_by_id(element.custom_edit_query).click()
-            self.driver.find_element_by_id(element.custom_edit_query).send_keys("名字")
+            self.driver.find_element_by_id(element.custom_edit_query).send_keys(u"名字")
             self.driver.keyevent(66)
             self.wait()
             if u"不要改" in self.driver.page_source:
@@ -513,7 +513,7 @@ class Test_case(unittest.TestCase):
             self.driver.find_element_by_id(element.fragment_contacts_mygroup).click()
             self.wait()
             self.driver.find_element_by_id(element.custom_edit_query).click()
-            self.driver.find_element_by_id(element.custom_edit_query).send_keys("名字")
+            self.driver.find_element_by_id(element.custom_edit_query).send_keys(u"名字")
             self.driver.keyevent(66)
             self.wait()
             if u"不要改" in self.driver.page_source:
