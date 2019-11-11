@@ -285,9 +285,9 @@ class Test_case(unittest.TestCase):
             self.driver.find_element_by_id(element.red_packets_button).click()
             self.wait()
             if u"余额不足,请充值" in self.driver.page_source:
-                print("红包发送失败,余额不足————faild")
-            else:
                 print("红包发送失败,余额不足————pass")
+            else:
+                print("红包发送失败,余额不足————faild")
         else:
             self.startapp()
             self.test_pwdlogin()
