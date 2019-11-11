@@ -24,8 +24,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Resource/myresource.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="385">
-              <caret line="339" column="23" lean-forward="true" selection-start-line="339" selection-start-column="23" selection-end-line="339" selection-end-column="23" />
+            <state relative-caret-position="515">
+              <caret line="199" column="74" lean-forward="true" selection-start-line="199" selection-start-column="74" selection-end-line="199" selection-end-column="74" />
               <folding>
                 <element signature="e#40#68#0" expanded="true" />
               </folding>
@@ -317,7 +317,7 @@
       <workItem from="1573027814848" duration="92000" />
       <workItem from="1573027929010" duration="989000" />
       <workItem from="1573028983427" duration="14736000" />
-      <workItem from="1573182842465" duration="14182000" />
+      <workItem from="1573182842465" duration="17655000" />
     </task>
     <servers />
   </component>
@@ -336,18 +336,17 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="263258000" />
+    <option name="totallyTimeSpent" value="266731000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="969" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23588924" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23588924" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3295325" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.18814139" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.18814139" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3990878" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -398,7 +397,7 @@
     <SUITE FILE_PATH="coverage/ui$run_all_case.coverage" NAME="run_all_case Coverage Results" MODIFIED="1572251070590" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ui$test4_lock_start.coverage" NAME="test4_lock_start Coverage Results" MODIFIED="1572402245718" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test_case" />
     <SUITE FILE_PATH="coverage/ui$test6_user_information.coverage" NAME="test6_user_information Coverage Results" MODIFIED="1571817437264" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test_case" />
-    <SUITE FILE_PATH="coverage/ui_Repository_for_python$myresource.coverage" NAME="myresource Coverage Results" MODIFIED="1573442271091" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Resource" />
+    <SUITE FILE_PATH="coverage/ui_Repository_for_python$myresource.coverage" NAME="myresource Coverage Results" MODIFIED="1573450519569" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Resource" />
     <SUITE FILE_PATH="coverage/ui$element.coverage" NAME="element Coverage Results" MODIFIED="1571300653944" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Resource" />
     <SUITE FILE_PATH="coverage/ui$test7_location_send.coverage" NAME="test7_location_send Coverage Results" MODIFIED="1571822510418" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test_case" />
     <SUITE FILE_PATH="coverage/ui$testcase.coverage" NAME="testcase Coverage Results" MODIFIED="1572250984441" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -513,8 +512,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Resource/myresource.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="385">
-          <caret line="339" column="23" lean-forward="true" selection-start-line="339" selection-start-column="23" selection-end-line="339" selection-end-column="23" />
+        <state relative-caret-position="515">
+          <caret line="199" column="74" lean-forward="true" selection-start-line="199" selection-start-column="74" selection-end-line="199" selection-end-column="74" />
           <folding>
             <element signature="e#40#68#0" expanded="true" />
           </folding>
