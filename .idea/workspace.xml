@@ -24,8 +24,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Resource/myresource.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="486">
-              <caret line="430" column="23" lean-forward="true" selection-start-line="430" selection-start-column="23" selection-end-line="430" selection-end-column="23" />
+            <state relative-caret-position="131">
+              <caret line="315" column="19" lean-forward="true" selection-start-line="315" selection-start-column="19" selection-end-line="315" selection-end-column="19" />
               <folding>
                 <element signature="e#40#68#0" expanded="true" />
               </folding>
@@ -317,7 +317,7 @@
       <workItem from="1573027814848" duration="92000" />
       <workItem from="1573027929010" duration="989000" />
       <workItem from="1573028983427" duration="14736000" />
-      <workItem from="1573182842465" duration="18862000" />
+      <workItem from="1573182842465" duration="19136000" />
     </task>
     <servers />
   </component>
@@ -336,7 +336,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="267938000" />
+    <option name="totallyTimeSpent" value="268212000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="969" extended-state="6" />
@@ -513,8 +513,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Resource/myresource.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="430" column="23" lean-forward="true" selection-start-line="430" selection-start-column="23" selection-end-line="430" selection-end-column="23" />
+        <state relative-caret-position="131">
+          <caret line="315" column="19" lean-forward="true" selection-start-line="315" selection-start-column="19" selection-end-line="315" selection-end-column="19" />
           <folding>
             <element signature="e#40#68#0" expanded="true" />
           </folding>
