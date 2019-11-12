@@ -24,7 +24,7 @@ class Test_case(unittest.TestCase):
         self.wait()
         self.driver.find_element_by_id(element.loginBtn).click()
         self.wait()
-        if element.muxin in self.driver.page_source:
+        if self.driver.find_element_by_id(element.muxin):
             print('登录成功————pass')
         else:
             print("登录成功————faild")
