@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="d46462b7-799d-4b5e-a6e7-d8762c89e27f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resource/element.py" beforeDir="false" afterPath="$PROJECT_DIR$/Resource/element.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Resource/myresource.py" beforeDir="false" afterPath="$PROJECT_DIR$/Resource/myresource.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,8 +30,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Resource/myresource.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="693" column="49" lean-forward="true" selection-start-line="693" selection-start-column="49" selection-end-line="693" selection-end-column="49" />
+            <state relative-caret-position="609">
+              <caret line="736" column="58" selection-start-line="736" selection-start-column="58" selection-end-line="736" selection-end-column="58" />
               <folding>
                 <element signature="e#40#68#0" expanded="true" />
               </folding>
@@ -347,7 +346,8 @@
       <workItem from="1574661375414" duration="1301000" />
       <workItem from="1574663215137" duration="1750000" />
       <workItem from="1574665465671" duration="2006000" />
-      <workItem from="1574667720842" duration="907000" />
+      <workItem from="1574667720842" duration="1244000" />
+      <workItem from="1574669538318" duration="15000" />
     </task>
     <servers />
   </component>
@@ -366,17 +366,18 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="321023000" />
+    <option name="totallyTimeSpent" value="321375000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="969" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29765707" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.30085197" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3295325" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.18814139" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.18814139" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3990878" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -543,8 +544,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Resource/myresource.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="693" column="49" lean-forward="true" selection-start-line="693" selection-start-column="49" selection-end-line="693" selection-end-column="49" />
+        <state relative-caret-position="609">
+          <caret line="736" column="58" selection-start-line="736" selection-start-column="58" selection-end-line="736" selection-end-column="58" />
           <folding>
             <element signature="e#40#68#0" expanded="true" />
           </folding>

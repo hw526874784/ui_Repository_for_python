@@ -734,6 +734,7 @@ def suite():
     suiteTest.addTest(Test_case("test_wallet_money"))
     suiteTest.addTest(Test_case("test_mudou"))
     suiteTest.addTest(Test_case("test_add_bank_card"))
+    suiteTest.addTest(Test_case("test_add_bank_card_faild"))
     suiteTest.addTest(Test_case("test_loginfaied"))
 
 
