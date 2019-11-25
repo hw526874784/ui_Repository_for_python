@@ -312,6 +312,46 @@ class Test_case(unittest.TestCase):
                 print("红包发送失败,余额不足————faild")
 
 
+    def test_red_bag_money_much(self):
+        self.wait()
+        if element.red_packets_button in self.driver.page_source:
+            self.driver.find_element_by_id(element.red_packets_money).click()
+            self.driver.keyevent(112)
+            self.driver.keyevent(112)
+            self.driver.keyevent(112)
+            self.driver.find_element_by_id(element.red_packets_money).send_keys("300")
+            self.wait()
+            self.driver.find_element_by_id(element.red_packets_button).click()
+            self.wait()
+            if u"单笔红包金额不能超过200元" in self.driver.page_source:
+                print("红包发送失败,金额超过200元————pass")
+            else:
+                print("红包发送失败,金额超过200元————faild")
+        else:
+            self.startapp()
+            self.test_pwdlogin()
+            self.wait()
+            self.driver.find_element_by_id(element.ll_contacts).click()
+            self.wait()
+            self.driver.find_element_by_xpath(element.contacts).click()
+            self.wait()
+            self.driver.find_element_by_id(element.layoutSendMsg).click()
+            self.wait()
+            self.driver.find_element_by_id(element.ivMoreMenuItem).click()
+            self.wait()
+            self.driver.find_element_by_xpath(element.red_bag).click()
+            self.wait()
+            self.driver.find_element_by_id(element.red_packets_money).send_keys("300")
+            self.wait()
+            self.driver.find_element_by_id(element.red_packets_button).click()
+            self.wait()
+            if u"单笔红包金额不能超过200元" in self.driver.page_source:
+                print("红包发送失败,金额超过200元————pass")
+            else:
+                print("红包发送失败,金额超过200元————faild")
+
+
+
     def test_transfer_money_lack(self):
         self.wait()
         if element.red_packets_button in self.driver.page_source:
@@ -521,6 +561,138 @@ class Test_case(unittest.TestCase):
             else:
                 print("群聊搜索成功————faild")
 
+    def test_wallet_money(self):
+        self.wait()
+        if  u"不要改" in self.driver.page_source:
+            self.driver.keyevent(4)
+            self.wait()
+            self.driver.find_element_by_id(element.ll_me).click()
+            self.wait()
+            self.driver.find_element_by_id(element.me_life_wallet_layout).click()
+            self.wait()
+            self.driver.find_element_by_id(element.wallet_money2).click()
+            if u"我的零钱" in self.driver.page_source:
+                print("零钱详情————pass")
+            else:
+                print("零钱详情————faild")
+        else:
+            self.startapp()
+            self.test_pwdlogin()
+            self.wait()
+            self.driver.find_element_by_id(element.ll_me).click()
+            self.wait()
+            self.driver.find_element_by_id(element.me_life_wallet_layout).click()
+            self.wait()
+            self.driver.find_element_by_id(element.wallet_money2).click()
+            if u"我的零钱" in self.driver.page_source:
+                print("零钱详情————pass")
+            else:
+                print("零钱详情————faild")
+
+
+
+    def test_mudou(self):
+        self.wait()
+        if  u"我的零钱" in self.driver.page_source:
+            self.driver.keyevent(4)
+            self.wait()
+            self.driver.find_element_by_id(element.wallet_mudou).click()
+            self.wait()
+            if u"我的拇豆" in self.driver.page_source:
+                print("拇豆详情————pass")
+            else:
+                print("拇豆详情————faild")
+        else:
+            self.startapp()
+            self.test_pwdlogin()
+            self.wait()
+            self.driver.find_element_by_id(element.ll_me).click()
+            self.wait()
+            self.driver.find_element_by_id(element.me_life_wallet_layout).click()
+            self.wait()
+            self.driver.find_element_by_id(element.wallet_mudou).click()
+            if u"我的拇豆" in self.driver.page_source:
+                print("拇豆详情————pass")
+            else:
+                print("拇豆详情————faild")
+
+
+    def test_add_bank_card(self):
+        self.wait()
+        if  u"我的拇豆" in self.driver.page_source:
+            self.driver.keyevent(4)
+            self.wait()
+            self.driver.find_element_by_xpath(element.bank_card).click()
+            self.wait()
+            self.driver.find_element_by_xpath(element.add_bank).click()
+            self.wait()
+            self.driver.find_element_by_id(element.back_card_number).send_keys("6222021905005603333")
+            self.wait()
+            self.driver.find_element_by_id(element.back_nex_step).click()
+            self.wait()
+            if u"填写银行卡信息" in self.driver.page_source:
+                print("添加银行卡————pass")
+            else:
+                print("添加银行卡————faild")
+
+        else:
+            self.startapp()
+            self.test_pwdlogin()
+            self.wait()
+            self.driver.find_element_by_id(element.ll_me).click()
+            self.wait()
+            self.driver.find_element_by_id(element.me_life_wallet_layout).click()
+            self.wait()
+            self.driver.find_element_by_xpath(element.bank_card).click()
+            self.wait()
+            self.driver.find_element_by_xpath(element.add_bank).click()
+            self.wait()
+            self.driver.find_element_by_id(element.back_card_number).send_keys("6222021905005603333")
+            self.wait()
+            self.driver.find_element_by_id(element.back_nex_step).click()
+            self.wait()
+            if u"填写银行卡信息" in self.driver.page_source:
+                print("添加银行卡————pass")
+            else:
+                print("添加银行卡————faild")
+
+
+
+    def test_add_bank_card_faild(self):
+        self.wait()
+        if  u"填写银行卡信息" in self.driver.page_source:
+            self.driver.keyevent(4)
+            self.wait()
+            self.driver.find_element_by_id(element.back_card_number).send_keys("1111111")
+            self.wait()
+            self.driver.find_element_by_id(element.back_nex_step).click()
+            self.wait()
+            if u"银行卡信息错误" in self.driver.page_source:
+                print("添加银行卡失败,银行卡信息错误————pass")
+            else:
+                print("添加银行卡失败,银行卡信息错误————faild")
+
+        else:
+            self.startapp()
+            self.test_pwdlogin()
+            self.wait()
+            self.driver.find_element_by_id(element.ll_me).click()
+            self.wait()
+            self.driver.find_element_by_id(element.me_life_wallet_layout).click()
+            self.wait()
+            self.driver.find_element_by_xpath(element.bank_card).click()
+            self.wait()
+            self.driver.find_element_by_xpath(element.add_bank).click()
+            self.wait()
+            self.driver.find_element_by_id(element.back_card_number).send_keys("111111111")
+            self.wait()
+            self.driver.find_element_by_id(element.back_nex_step).click()
+            self.wait()
+            if u"银行卡信息错误" in self.driver.page_source:
+                print("添加银行卡失败,银行卡信息错误————pass")
+            else:
+                print("添加银行卡失败,银行卡信息错误————faild")
+
     def test_loginfaied(self):
         self.startapp()
         self.driver.find_element_by_id(element.account_pwd_login).click()
@@ -552,13 +724,18 @@ def suite():
     suiteTest.addTest(Test_case("test_user_information"))
     suiteTest.addTest(Test_case("test_location_send"))
     suiteTest.addTest(Test_case("test_red_bag_lack_money"))
+    suiteTest.addTest(Test_case("test_red_bag_money_much"))
     suiteTest.addTest(Test_case("test_transfer_money_lack"))
     suiteTest.addTest(Test_case("test_home_search"))
     suiteTest.addTest(Test_case("test_friends_search"))
     suiteTest.addTest(Test_case("test_add_friends"))
     suiteTest.addTest(Test_case("test_friends_nearby"))
     suiteTest.addTest(Test_case("test_group_search"))
+    suiteTest.addTest(Test_case("test_wallet_money"))
+    suiteTest.addTest(Test_case("test_mudou"))
+    suiteTest.addTest(Test_case("test_add_bank_card"))
     suiteTest.addTest(Test_case("test_loginfaied"))
+
 
     return suiteTest
 
