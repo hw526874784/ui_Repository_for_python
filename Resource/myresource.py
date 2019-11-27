@@ -14,6 +14,7 @@ class Test_case(unittest.TestCase):
     def wait(self):
         self.driver.implicitly_wait(15)
 
+#登录
     def test_pwdlogin(self):
         self.wait()
         self.driver.find_element_by_id(element.account_pwd_login).click()
@@ -29,7 +30,7 @@ class Test_case(unittest.TestCase):
         else:
             print("登录成功————faild")
 
-
+#发送消息
     def test_send_message(self):
         self.wait()
         if element.ll_contacts in self.driver.page_source:
@@ -66,7 +67,7 @@ class Test_case(unittest.TestCase):
             else:
                 print('消息发送成功————faild')
 
-
+#发送照片
     def test_send_photo(self):
         self.wait()
         if element.ivPhoto in self.driver.page_source:
@@ -100,6 +101,8 @@ class Test_case(unittest.TestCase):
             else:
                 print("照片发送成功————faild")
 
+
+#上锁
     def test_lock_start(self):
         self.wait()
         if element.chat_head_lock in self.driver.page_source:
@@ -140,7 +143,7 @@ class Test_case(unittest.TestCase):
             else:
                 print("上锁成功————faild")
 
-
+#解锁失败，密码错误
     def test_lock_pwderro(self):
         self.wait()
         self.driver.find_element_by_id(element.linear_pass)
@@ -156,7 +159,7 @@ class Test_case(unittest.TestCase):
         self.driver.keyevent(4)
         self.driver.keyevent(4)
 
-
+#密聊开启
     def test_secretly(self):
         self.wait()
         if element.ll_contacts in self.driver.page_source:
@@ -199,6 +202,7 @@ class Test_case(unittest.TestCase):
         self.wait()
         self.driver.find_element_by_id(element.chat_head_secretly).click()
 
+#用户信息
     def test_user_information(self):
         self.wait()
         if element.chat_head_cir in self.driver.page_source:
@@ -234,6 +238,7 @@ class Test_case(unittest.TestCase):
             self.driver.keyevent(4)
             self.driver.keyevent(4)
 
+#发送位置
     def test_location_send(self):
         self.wait()
         if element.ivMoreMenuItem in self.driver.page_source:
@@ -273,6 +278,7 @@ class Test_case(unittest.TestCase):
                 print("位置发送成功————faild")
 
 
+#红包发送失败，余额不足
     def test_red_bag_lack_money(self):
         self.wait()
         if element.message_map in self.driver.page_source:
@@ -312,6 +318,7 @@ class Test_case(unittest.TestCase):
                 print("红包发送失败,余额不足————faild")
 
 
+#红包发送失败，余额超过200元
     def test_red_bag_money_much(self):
         self.wait()
         if element.red_packets_button in self.driver.page_source:
@@ -351,7 +358,7 @@ class Test_case(unittest.TestCase):
                 print("红包发送失败,金额超过200元————faild")
 
 
-
+#转账失败，余额不足
     def test_transfer_money_lack(self):
         self.wait()
         if element.red_packets_button in self.driver.page_source:
@@ -392,6 +399,7 @@ class Test_case(unittest.TestCase):
                 print("转账失败,余额不足————faild")
 
 
+#首页搜索成功
     def test_home_search(self):
         self.wait()
         if  element.transfer_uniteButton in self.driver.page_source:
@@ -432,7 +440,7 @@ class Test_case(unittest.TestCase):
             self.driver.keyevent(4)
 
 
-
+#好友搜索成功
     def test_friends_search(self):
         self.wait()
         if  element.ll_contacts in self.driver.page_source:
@@ -463,7 +471,7 @@ class Test_case(unittest.TestCase):
             else:
                 print("好友搜索成功————faild")
 
-
+#添加好友成功
     def test_add_friends(self):
         self.wait()
         if  element.header_add_contasts in self.driver.page_source:
@@ -498,7 +506,7 @@ class Test_case(unittest.TestCase):
             else:
                 print("添加好友成功————faild")
 
-
+#添加附近的人成功
     def test_friends_nearby(self):
         self.wait()
         if  "1143527" in self.driver.page_source:
@@ -527,7 +535,7 @@ class Test_case(unittest.TestCase):
             else:
                 print("添加附近的人成功————faild")
 
-
+#群聊搜索成功
     def test_group_search(self):
         self.wait()
         if  u"100米以内" in self.driver.page_source:
@@ -561,6 +569,7 @@ class Test_case(unittest.TestCase):
             else:
                 print("群聊搜索成功————faild")
 
+#零钱详情
     def test_wallet_money(self):
         self.wait()
         if  u"不要改" in self.driver.page_source:
@@ -590,7 +599,7 @@ class Test_case(unittest.TestCase):
                 print("零钱详情————faild")
 
 
-
+#拇豆详情
     def test_mudou(self):
         self.wait()
         if  u"我的零钱" in self.driver.page_source:
@@ -616,7 +625,7 @@ class Test_case(unittest.TestCase):
             else:
                 print("拇豆详情————faild")
 
-
+#添加银行卡
     def test_add_bank_card(self):
         self.wait()
         if  u"我的拇豆" in self.driver.page_source:
@@ -657,7 +666,7 @@ class Test_case(unittest.TestCase):
                 print("添加银行卡————faild")
 
 
-
+#添加银行卡失败
     def test_add_bank_card_faild(self):
         self.wait()
         if  u"填写银行卡信息" in self.driver.page_source:
@@ -693,6 +702,106 @@ class Test_case(unittest.TestCase):
             else:
                 print("添加银行卡失败,银行卡信息错误————faild")
 
+
+#交易记录查询
+    def test_transaction_records(self):
+        self.wait()
+        if  u"添加银行卡" in self.driver.page_source:
+            self.driver.keyevent(4)
+            self.driver.keyevent(4)
+            self.wait()
+            self.driver.find_element_by_xpath(element.more).click()
+            self.wait()
+            self.driver.find_element_by_xpath(element.transaction_records).click()
+            self.wait()
+            if u"0.0" in self.driver.page_source:
+                print("交易记录查询成功————pass")
+            else:
+                print("交易记录查询成功————faild")
+
+        else:
+            self.startapp()
+            self.test_pwdlogin()
+            self.wait()
+            self.driver.find_element_by_id(element.ll_me).click()
+            self.wait()
+            self.driver.find_element_by_id(element.me_life_wallet_layout).click()
+            self.wait()
+            self.driver.find_element_by_xpath(element.more).click()
+            self.wait()
+            self.driver.find_element_by_xpath(element.transaction_records).click()
+            self.wait()
+            if u"0.0" in self.driver.page_source:
+                print("交易记录查询成功————pass")
+            else:
+                print("交易记录查询成功————faild")
+
+
+#忘记钱包密码
+    def test_forgot_password(self):
+        self.wait()
+        if  u"0.0" in self.driver.page_source:
+            self.driver.keyevent(4)
+            self.wait()
+            self.driver.find_element_by_xpath(element.more).click()
+            self.wait()
+            self.driver.find_element_by_xpath(element.forgot_password).click()
+            self.wait()
+            self.wait()
+            if u"重置支付密码" in self.driver.page_source:
+                print("忘记钱包密码————pass")
+            else:
+                print("忘记钱包密码————faild")
+
+        else:
+            self.startapp()
+            self.test_pwdlogin()
+            self.wait()
+            self.driver.find_element_by_id(element.ll_me).click()
+            self.wait()
+            self.driver.find_element_by_id(element.me_life_wallet_layout).click()
+            self.wait()
+            self.driver.find_element_by_xpath(element.more).click()
+            self.wait()
+            self.driver.find_element_by_xpath(element.forgot_password).click()
+            self.wait()
+            if u"重置支付密码" in self.driver.page_source:
+                print("忘记钱包密码————pass")
+            else:
+                print("忘记钱包密码————faild")
+
+#忘记密码，密码为空
+    def test_forgot_password_empty(self):
+        self.wait()
+        if  u"重置支付密码" in self.driver.page_source:
+            self.wait()
+            self.driver.find_element_by_id(element.back_nex_step).click()
+            self.wait()
+            if u"请输入验证码" in self.driver.page_source:
+                print("忘记钱包密码,密码为空————pass")
+            else:
+                print("忘记钱包密码,密码为空————faild")
+
+        else:
+            self.startapp()
+            self.test_pwdlogin()
+            self.wait()
+            self.driver.find_element_by_id(element.ll_me).click()
+            self.wait()
+            self.driver.find_element_by_id(element.me_life_wallet_layout).click()
+            self.wait()
+            self.driver.find_element_by_xpath(element.more).click()
+            self.wait()
+            self.driver.find_element_by_xpath(element.forgot_password).click()
+            self.wait()
+            self.driver.find_element_by_id(element.back_nex_step).click()
+            self.wait()
+            if u"请输入验证码" in self.driver.page_source:
+                print("忘记钱包密码,密码为空————pass")
+            else:
+                print("忘记钱包密码,密码为空————faild")
+
+#密码错误登录失败
     def test_loginfaied(self):
         self.startapp()
         self.driver.find_element_by_id(element.account_pwd_login).click()
@@ -735,6 +844,9 @@ def suite():
     suiteTest.addTest(Test_case("test_mudou"))
     suiteTest.addTest(Test_case("test_add_bank_card"))
     suiteTest.addTest(Test_case("test_add_bank_card_faild"))
+    suiteTest.addTest(Test_case("test_transaction_records"))
+    suiteTest.addTest(Test_case("test_forgot_password"))
+    suiteTest.addTest(Test_case("test_forgot_password_empty"))
     suiteTest.addTest(Test_case("test_loginfaied"))
 
 

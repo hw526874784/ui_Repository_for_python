@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d46462b7-799d-4b5e-a6e7-d8762c89e27f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resource/element.py" beforeDir="false" afterPath="$PROJECT_DIR$/Resource/element.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Resource/myresource.py" beforeDir="false" afterPath="$PROJECT_DIR$/Resource/myresource.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,8 +17,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Resource/element.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1080">
-              <caret line="72" column="14" selection-start-line="72" selection-start-column="14" selection-end-line="72" selection-end-column="14" />
+            <state relative-caret-position="1125">
+              <caret line="75" column="1" selection-start-line="75" selection-start-column="1" selection-end-line="75" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -30,8 +31,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Resource/myresource.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="609">
-              <caret line="736" column="58" selection-start-line="736" selection-start-column="58" selection-end-line="736" selection-end-column="58" />
+            <state relative-caret-position="405">
+              <caret line="832" column="57" lean-forward="true" selection-start-line="832" selection-start-column="57" selection-end-line="832" selection-end-column="57" />
               <folding>
                 <element signature="e#40#68#0" expanded="true" />
               </folding>
@@ -109,6 +110,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -125,7 +127,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -347,7 +348,13 @@
       <workItem from="1574663215137" duration="1750000" />
       <workItem from="1574665465671" duration="2006000" />
       <workItem from="1574667720842" duration="1244000" />
-      <workItem from="1574669538318" duration="15000" />
+      <workItem from="1574669538318" duration="228000" />
+      <workItem from="1574734818100" duration="417000" />
+      <workItem from="1574748856040" duration="1589000" />
+      <workItem from="1574750758356" duration="233000" />
+      <workItem from="1574823701118" duration="1675000" />
+      <workItem from="1574834430561" duration="922000" />
+      <workItem from="1574837194966" duration="1498000" />
     </task>
     <servers />
   </component>
@@ -366,13 +373,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="321375000" />
+    <option name="totallyTimeSpent" value="327922000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="969" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.30085197" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3200213" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -429,7 +436,7 @@
     <SUITE FILE_PATH="coverage/ui$run_all_case.coverage" NAME="run_all_case Coverage Results" MODIFIED="1572251070590" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ui$test4_lock_start.coverage" NAME="test4_lock_start Coverage Results" MODIFIED="1572402245718" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test_case" />
     <SUITE FILE_PATH="coverage/ui$test6_user_information.coverage" NAME="test6_user_information Coverage Results" MODIFIED="1571817437264" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test_case" />
-    <SUITE FILE_PATH="coverage/ui_Repository_for_python$myresource.coverage" NAME="myresource Coverage Results" MODIFIED="1574668179149" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Resource" />
+    <SUITE FILE_PATH="coverage/ui_Repository_for_python$myresource.coverage" NAME="myresource Coverage Results" MODIFIED="1574838404659" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Resource" />
     <SUITE FILE_PATH="coverage/ui$element.coverage" NAME="element Coverage Results" MODIFIED="1571300653944" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Resource" />
     <SUITE FILE_PATH="coverage/ui$test7_location_send.coverage" NAME="test7_location_send Coverage Results" MODIFIED="1571822510418" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test_case" />
     <SUITE FILE_PATH="coverage/ui$testcase.coverage" NAME="testcase Coverage Results" MODIFIED="1572250984441" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -534,8 +541,8 @@
     <entry file="file://$PROJECT_DIR$/Test_case/test3_send_photo.py" />
     <entry file="file://$PROJECT_DIR$/Resource/element.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1080">
-          <caret line="72" column="14" selection-start-line="72" selection-start-column="14" selection-end-line="72" selection-end-column="14" />
+        <state relative-caret-position="1125">
+          <caret line="75" column="1" selection-start-line="75" selection-start-column="1" selection-end-line="75" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -544,8 +551,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Resource/myresource.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="609">
-          <caret line="736" column="58" selection-start-line="736" selection-start-column="58" selection-end-line="736" selection-end-column="58" />
+        <state relative-caret-position="405">
+          <caret line="832" column="57" lean-forward="true" selection-start-line="832" selection-start-column="57" selection-end-line="832" selection-end-column="57" />
           <folding>
             <element signature="e#40#68#0" expanded="true" />
           </folding>
