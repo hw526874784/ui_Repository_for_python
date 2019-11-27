@@ -4,7 +4,7 @@ from appium import webdriver
 from Resource import element
 from Resource import config
 import unittest
-
+import time
 class Test_case(unittest.TestCase):
     def startapp(self):
         webdriver.Remote('http://0.0.0.0:4444/wd/hub',config.desired_caps)
@@ -515,7 +515,7 @@ class Test_case(unittest.TestCase):
             self.driver.keyevent(4)
             self.wait()
             self.driver.find_element_by_xpath(element.friends_nearby).click()
-            self.wait()
+            time.sleep(5)
             if u"100米以内" in self.driver.page_source:
                 print("添加附近的人成功————pass")
             else:
@@ -529,7 +529,7 @@ class Test_case(unittest.TestCase):
             self.driver.find_element_by_id(element.header_add_contasts).click()
             self.wait()
             self.driver.find_element_by_xpath(element.friends_nearby).click()
-            self.wait()
+            time.sleep(5)
             if u"100米以内" in self.driver.page_source:
                 print("添加附近的人成功————pass")
             else:

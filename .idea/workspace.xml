@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="d46462b7-799d-4b5e-a6e7-d8762c89e27f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resource/element.py" beforeDir="false" afterPath="$PROJECT_DIR$/Resource/element.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Resource/myresource.py" beforeDir="false" afterPath="$PROJECT_DIR$/Resource/myresource.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,8 +30,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Resource/myresource.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="832" column="57" lean-forward="true" selection-start-line="832" selection-start-column="57" selection-end-line="832" selection-end-column="57" />
+            <state relative-caret-position="177">
+              <caret line="517" column="24" selection-start-line="517" selection-start-column="24" selection-end-line="517" selection-end-column="24" />
               <folding>
                 <element signature="e#40#68#0" expanded="true" />
               </folding>
@@ -110,7 +109,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -127,6 +125,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -354,7 +353,8 @@
       <workItem from="1574750758356" duration="233000" />
       <workItem from="1574823701118" duration="1675000" />
       <workItem from="1574834430561" duration="922000" />
-      <workItem from="1574837194966" duration="1498000" />
+      <workItem from="1574837194966" duration="1686000" />
+      <workItem from="1574839572362" duration="362000" />
     </task>
     <servers />
   </component>
@@ -373,13 +373,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="327922000" />
+    <option name="totallyTimeSpent" value="328472000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="969" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3200213" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3232162" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -551,8 +551,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Resource/myresource.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="832" column="57" lean-forward="true" selection-start-line="832" selection-start-column="57" selection-end-line="832" selection-end-column="57" />
+        <state relative-caret-position="177">
+          <caret line="517" column="24" selection-start-line="517" selection-start-column="24" selection-end-line="517" selection-end-column="24" />
           <folding>
             <element signature="e#40#68#0" expanded="true" />
           </folding>
